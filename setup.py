@@ -24,11 +24,11 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 """
 
-import pathlib
 import os
+import pathlib
 import re
-from setuptools import setup
 
+from setuptools import setup
 
 ROOT = pathlib.Path(__file__).parent
 on_rtd = os.getenv("READTHEDOCS") == "True"
@@ -54,7 +54,7 @@ setup(
     version=VERSION,
     packages=["wavelink", "wavelink.ext.spotify", "wavelink.types"],
     license="MIT",
-    description="A robust and powerful Lavalink wrapper for discord.py and derivatives.",
+    description="A robust and powerful Lavalink wrapper for disnake.py and derivatives.",
     long_description=readme,
     include_package_data=True,
     install_requires=requirements,
